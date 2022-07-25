@@ -1,7 +1,8 @@
 import numpy as np
 import pickle
+import os
 
-fp = open('datafile.pkl','rb')
+fp = open(os.path.join(os.path.dirname(__file__), 'datafile.pkl'),'rb')
 data = pickle.load(fp)
 fp.close()
 
